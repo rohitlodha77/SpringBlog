@@ -18,7 +18,8 @@ public class PostService {
         Post post = new Post();
         post.setTitle(postRequest.getTitle());
         post.setContent(postRequest.getContent());
-        post.setImage(post.getImage());
+        post.setContent2(postRequest.getContent2());
+        post.setImage(postRequest.getImage());
         postRepository.save(post);
     }
 

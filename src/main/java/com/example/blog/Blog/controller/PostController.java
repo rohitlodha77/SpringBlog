@@ -21,12 +21,14 @@ public class PostController {
     @PostMapping("/create")
     public ResponseEntity create(@RequestBody PostRequest postRequest) {
         postService.save(postRequest);
-        return new ResponseEntity(HttpStatus.OK);
+        System.out.print(postRequest);
+        return new  ResponseEntity(HttpStatus.OK);
     }
 
     @PutMapping("/update")
     public ResponseEntity update(@RequestBody PostRequest postRequest) {
         postService.update(postRequest);
+        System.out.print(postRequest);
         return new ResponseEntity(HttpStatus.OK);
     }
 

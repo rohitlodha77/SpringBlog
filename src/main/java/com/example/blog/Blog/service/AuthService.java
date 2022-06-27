@@ -17,6 +17,7 @@ public class AuthService {
         BlogUser blogUser = new BlogUser();
         blogUser.setUsername(authRequest.getUsername());
         blogUser.setPassword(authRequest.getPassword());
+        blogUser.setAdmin(authRequest.isAdmin());
         authRepository.save(blogUser);
     }
 

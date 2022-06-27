@@ -19,7 +19,8 @@ public class Post {
     private Long id;
     private String title;
     private String image;
-
     @Column(columnDefinition="TEXT")
     private String content;
+    @Column(columnDefinition="TEXT")
+    private String content2;
 }
